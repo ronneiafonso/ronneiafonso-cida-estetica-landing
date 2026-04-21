@@ -1,0 +1,41 @@
+[build]
+  command   = "npm run build"
+  publish   = "dist"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevents clickjacking attacks
+    X-Frame-Options = "DENY"
+
+    # Prevents MIME-type sniffing
+    X-Content-Type-Options = "nosniff"
+
+    # Enables XSS filter in older browsers
+    X-XSS-Protection = "1; mode=block"
+
+    # Forces HTTPS for 1 year (preload-ready)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # Controls what information is sent in the Referer header
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Restricts browser features the page can use
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+    # Content Security Policy — allows only trusted origins
+    Content-Security-Policy = """
+      default-src 'self';
+      script-src 'self' 'unsafe-inline';
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' data: https:;
+      connect-src 'self' https://wa.me https://api.whatsapp.com;
+      frame-ancestors 'none'
+    """
+
+# SPA: redirect all routes to index.html
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
