@@ -1,6 +1,6 @@
-<img width="854" height="411" alt="desktop" src="https://github.com/user-attachments/assets/696310c3-fc2f-4f96-9df6-9b2d5d6e8516" /># Cida Estética — Landing Page
+# Cida Estética — Landing Page
 
-> *Elegância que transforma. Beleza que empodera.*
+> *Elegância que transforma.*
 
 ---
 
@@ -128,7 +128,7 @@ O arquivo `netlify.toml` configura cabeçalhos HTTP como `Content-Security-Polic
 Profissional em transição para a área de tecnologia, com foco em desenvolvimento e automação de processos. Possui experiência sólida com Google Planilhas, Apps Script e análise de dados, além de atuação como educador — o que potencializa a capacidade de comunicação, organização e resolução de problemas.
 
 [![GitHub](https://img.shields.io/badge/GitHub-ronneiafonso-181717?style=for-the-badge&logo=github)](https://github.com/ronneiafonso)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ronnei%20Afonso-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ronneiafonso)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ronnei%20Afonso-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ronnei-afonso)
 
 ---
 
