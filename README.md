@@ -40,8 +40,7 @@ Mulheres adultas que buscam serviços de estética de qualidade na Grande Vitór
 
 | Desktop | Mobile |
 |---|---|
-|<img width="854" height="411" alt="desktop" src="https://github.com/user-attachments/assets/a813d922-6121-4310-bea2-9e06f5b2872b" />
-|<img width="235" height="359" alt="mobile1" src="https://github.com/user-attachments/assets/b427e604-ba5f-4bd9-b53d-9f992c3fef69" />|
+| *<img width="854" height="411" alt="desktop" src="https://github.com/user-attachments/assets/a813d922-6121-4310-bea2-9e06f5b2872b" />* | *<img width="235" height="359" alt="mobile1" src="https://github.com/user-attachments/assets/b427e604-ba5f-4bd9-b53d-9f992c3fef69" />* |
 
 ---
 
