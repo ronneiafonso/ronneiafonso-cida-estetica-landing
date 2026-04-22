@@ -1,4 +1,4 @@
-# Cida Estética — Landing Page
+<img width="854" height="411" alt="desktop" src="https://github.com/user-attachments/assets/696310c3-fc2f-4f96-9df6-9b2d5d6e8516" /># Cida Estética — Landing Page
 
 > *Elegância que transforma. Beleza que empodera.*
 
@@ -37,11 +37,11 @@ Mulheres adultas que buscam serviços de estética de qualidade na Grande Vitór
 
 🔗 **Acesse o site em produção:** [https://cida-estetica.netlify.app](https://cida-estetica.netlify.app)
 
-> 💡 *Sugestão: insira abaixo prints ou GIFs da interface nas versões desktop e mobile para enriquecer o portfólio.*
 
 | Desktop | Mobile |
 |---|---|
-| *(insira print aqui)* | *(insira print aqui)* |
+|<img width="854" height="411" alt="desktop" src="https://github.com/user-attachments/assets/a813d922-6121-4310-bea2-9e06f5b2872b" />
+|<img width="235" height="359" alt="mobile1" src="https://github.com/user-attachments/assets/b427e604-ba5f-4bd9-b53d-9f992c3fef69" />|
 
 ---
 
