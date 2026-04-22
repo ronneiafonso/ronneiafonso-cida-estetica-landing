@@ -1,73 +1,188 @@
-# React + TypeScript + Vite
+# 💆‍♀️ Cida Estética — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> *Elegância que transforma. Beleza que empodera.*
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Índice
 
-## React Compiler
+- [Visão Geral](#-visão-geral)
+- [Demonstração](#-demonstração)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Funcionalidades](#-funcionalidades)
+- [Decisões de Desenvolvimento](#-decisões-de-desenvolvimento)
+- [Diferenciais do Projeto](#-diferenciais-do-projeto)
+- [Aprendizados](#-aprendizados)
+- [Melhorias Futuras](#-melhorias-futuras)
+- [Como Executar o Projeto](#-como-executar-o-projeto)
+- [Autor](#-autor)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🎯 Visão Geral
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A **Cida Estética** é uma landing page desenvolvida para uma profissional autônoma de estética localizada em Vitória - ES. O objetivo central da página é converter visitantes em clientes, apresentando os serviços oferecidos, facilitando o contato via WhatsApp e transmitindo profissionalismo e confiança desde o primeiro acesso.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Problema que resolve
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Muitos profissionais autônomos da área da beleza dependem exclusivamente de redes sociais para divulgar seu trabalho — o que limita a credibilidade e a conversão. Esta landing page oferece uma presença digital própria, com identidade visual consistente, informações centralizadas e um caminho claro para o agendamento.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Público-alvo
+
+Mulheres adultas que buscam serviços de estética de qualidade na Grande Vitória, com acesso predominantemente via smartphone.
+
+---
+
+## 🌐 Demonstração
+
+🔗 **Acesse o site em produção:** [https://cida-estetica.netlify.app](https://cida-estetica.netlify.app)
+
+> 💡 *Sugestão: insira abaixo prints ou GIFs da interface nas versões desktop e mobile para enriquecer o portfólio.*
+
+| Desktop | Mobile |
+|---|---|
+| *(insira print aqui)* | *(insira print aqui)* |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Tecnologia | Versão | Papel no Projeto |
+|---|---|---|
+| **React** | 19 | Biblioteca principal para construção da interface por componentes |
+| **TypeScript** | 6 | Tipagem estática que previne erros e melhora a manutenibilidade |
+| **Vite** | 8 | Bundler moderno com HMR ultrarrápido e build otimizado para produção |
+| **Framer Motion** | 12 | Animações fluidas de entrada e interação (fade, slide, scale) |
+| **Lucide React** | 0.47 | Biblioteca de ícones SVG leve e consistente com o design |
+| **CSS Vanilla** | — | Estilização completa sem dependências externas, com CSS Variables e Media Queries |
+| **Google Fonts** | — | Tipografia refinada com *Playfair Display* (títulos) e *Inter* (textos) |
+| **Netlify** | — | Hospedagem com deploy contínuo, HTTPS automático e headers de segurança |
+
+---
+
+## ✨ Funcionalidades
+
+- **Navbar com menu hambúrguer** — navegação adaptada ao mobile com drawer animado
+- **Hero Section** — apresentação impactante com animações de entrada e badge de prova social
+- **Seção de Serviços** — cards com hover animado exibindo os principais tratamentos
+- **Seção "Tratamentos Exclusivos"** — destaque visual com imagem e lista de diferenciais
+- **Seção de Contato** — informações centralizadas (telefone, e-mail, endereço e Instagram)
+- **CTA WhatsApp** — botão de chamada à ação direto para conversa no WhatsApp
+- **Design responsivo** — experiência otimizada para smartphones, tablets e desktops
+- **Scroll suave** — navegação fluida entre as seções via âncoras
+
+---
+
+## 🧠 Decisões de Desenvolvimento
+
+### Componentes independentes e coesos
+O projeto foi dividido em componentes React com responsabilidade única (`Navbar`, `Hero`, `Services`, `Contact`, `Footer`), facilitando manutenção, leitura e reuso futuro.
+
+### CSS Vanilla com Custom Properties
+Em vez de adotar frameworks como Tailwind ou Bootstrap, optou-se por CSS puro com variáveis CSS (`--primary`, `--secondary`, `--text-muted`, etc.). Isso elimina dependências desnecessárias, reduz o tamanho do bundle e oferece controle total sobre o design.
+
+### Responsividade por Media Queries escaladas
+Foram implementados três breakpoints (`1200px`, `768px` e `480px`) com ajustes progressivos de layout, tipografia e espaçamentos — garantindo que nenhum elemento quebre ou transborde em telas pequenas.
+
+### Animações com Framer Motion
+As animações foram aplicadas apenas onde agregam valor percebido pelo usuário (entrada do hero, hover nos cards), evitando excesso que comprometeria a performance.
+
+### Headers de segurança via Netlify
+O arquivo `netlify.toml` configura cabeçalhos HTTP como `Content-Security-Policy`, `X-Frame-Options`, `Strict-Transport-Security` e `Permissions-Policy` — práticas essenciais para sites em produção.
+
+---
+
+## 🏆 Diferenciais do Projeto
+
+- 📱 **Mobile-first real** — o layout foi testado e corrigido para funcionar corretamente em smartphones, não apenas reduzido
+- 🎨 **Design premium** — paleta de cores cuidadosamente escolhida, tipografia refinada e glassmorphism aplicado com moderação
+- ⚡ **Performance** — bundle otimizado com Vite, imagens com `object-fit`, sem bibliotecas CSS externas pesadas
+- 🔒 **Segurança** — headers HTTP configurados para proteção contra XSS, clickjacking e MIME sniffing
+- 🔍 **SEO básico** — `<title>` descritivo, `<meta description>`, HTML semântico e estrutura de headings correta
+- 🌐 **Deploy automatizado** — publicação com um comando via Netlify CLI, com CDN global
+
+---
+
+## 📚 Aprendizados
+
+- Compreensão prática do ciclo completo de desenvolvimento: da criação local ao deploy em produção
+- Implementação de responsividade real, indo além de apenas escalar elementos — reorganizando o layout com CSS Grid e `flexWrap`
+- Uso de **Framer Motion** para animações declarativas e performáticas em React
+- Configuração de **headers de segurança HTTP** em ambiente de produção via `netlify.toml`
+- Fluxo completo de versionamento com **Git** e publicação no **GitHub**
+- Boas práticas de **componentização** em React com TypeScript
+
+### Desafios enfrentados
+
+| Desafio | Solução |
+|---|---|
+| Navbar não adaptava ao mobile | Criado menu hambúrguer com drawer animado e controle de estado React |
+| Grid de 2 colunas quebrando em telas pequenas | Aplicado `grid-template-columns: 1fr` via media query em cada seção |
+| Fontes com tamanho fixo em mobile | Reduzidos progressivamente em breakpoints `768px` e `480px` |
+| Git não reconhecido no terminal | Localizado caminho absoluto do executável em `C:\Program Files\Git\bin\git.exe` |
+
+---
+
+## 🚀 Melhorias Futuras
+
+- [ ] Adicionar galeria de fotos com resultados dos tratamentos (antes/depois)
+- [ ] Implementar formulário de contato com envio de e-mail (ex: EmailJS ou Formspree)
+- [ ] Integrar sistema de agendamento online
+- [ ] Criar seção de depoimentos de clientes com fotos
+- [ ] Adicionar mapa interativo do Google Maps na seção de contato
+- [ ] Melhorar o SEO com meta tags Open Graph para compartilhamento em redes sociais
+- [ ] Implementar Google Analytics para monitorar acessos e conversões
+- [ ] Otimizar imagens com formato WebP para maior performance
+
+---
+
+## 💻 Como Executar o Projeto
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/) v18 ou superior
+- [npm](https://www.npmjs.com/) v9 ou superior
+
+### Passo a passo
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/ronneiafonso/ronneiafonso-cida-estetica-landing.git
+
+# 2. Acesse a pasta do projeto
+cd ronneiafonso-cida-estetica-landing
+
+# 3. Instale as dependências
+npm install
+
+# 4. Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Acesse **[http://localhost:5173](http://localhost:5173)** no navegador.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Scripts disponíveis
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Comando | Descrição |
+|---|---|
+| `npm run dev` | Inicia o servidor de desenvolvimento com HMR |
+| `npm run build` | Gera o build otimizado para produção na pasta `dist/` |
+| `npm run preview` | Pré-visualiza o build de produção localmente |
+| `npm run lint` | Executa a análise estática de código com ESLint |
+
+---
+
+## 👨‍💻 Autor
+
+**Ronnei Afonso Leite de Oliveira**
+
+Profissional em transição para a área de tecnologia, com foco em desenvolvimento e automação de processos. Possui experiência sólida com Google Planilhas, Apps Script e análise de dados, além de atuação como educador — o que potencializa a capacidade de comunicação, organização e resolução de problemas.
+
+[![GitHub](https://img.shields.io/badge/GitHub-ronneiafonso-181717?style=for-the-badge&logo=github)](https://github.com/ronneiafonso)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ronnei%20Afonso-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ronneiafonso)
+
+---
+
+<p align="center">
+  Desenvolvido com 💜 por <strong>Ronnei Afonso</strong>
+</p>
