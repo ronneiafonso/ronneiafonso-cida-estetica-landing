@@ -1,10 +1,10 @@
-# 💆‍♀️ Cida Estética — Landing Page
+# Cida Estética — Landing Page
 
 > *Elegância que transforma. Beleza que empodera.*
 
 ---
 
-## 📋 Índice
+## Índice
 
 - [Visão Geral](#-visão-geral)
 - [Demonstração](#-demonstração)
@@ -19,7 +19,7 @@
 
 ---
 
-## 🎯 Visão Geral
+## Visão Geral
 
 A **Cida Estética** é uma landing page desenvolvida para uma profissional autônoma de estética localizada em Vitória - ES. O objetivo central da página é converter visitantes em clientes, apresentando os serviços oferecidos, facilitando o contato via WhatsApp e transmitindo profissionalismo e confiança desde o primeiro acesso.
 
@@ -33,7 +33,7 @@ Mulheres adultas que buscam serviços de estética de qualidade na Grande Vitór
 
 ---
 
-## 🌐 Demonstração
+## Demonstração
 
 🔗 **Acesse o site em produção:** [https://cida-estetica.netlify.app](https://cida-estetica.netlify.app)
 
@@ -45,7 +45,7 @@ Mulheres adultas que buscam serviços de estética de qualidade na Grande Vitór
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Versão | Papel no Projeto |
 |---|---|---|
@@ -60,7 +60,7 @@ Mulheres adultas que buscam serviços de estética de qualidade na Grande Vitór
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - **Navbar com menu hambúrguer** — navegação adaptada ao mobile com drawer animado
 - **Hero Section** — apresentação impactante com animações de entrada e badge de prova social
@@ -73,7 +73,7 @@ Mulheres adultas que buscam serviços de estética de qualidade na Grande Vitór
 
 ---
 
-## 🧠 Decisões de Desenvolvimento
+## Decisões de Desenvolvimento
 
 ### Componentes independentes e coesos
 O projeto foi dividido em componentes React com responsabilidade única (`Navbar`, `Hero`, `Services`, `Contact`, `Footer`), facilitando manutenção, leitura e reuso futuro.
@@ -92,18 +92,18 @@ O arquivo `netlify.toml` configura cabeçalhos HTTP como `Content-Security-Polic
 
 ---
 
-## 🏆 Diferenciais do Projeto
+## Diferenciais do Projeto
 
-- 📱 **Mobile-first real** — o layout foi testado e corrigido para funcionar corretamente em smartphones, não apenas reduzido
-- 🎨 **Design premium** — paleta de cores cuidadosamente escolhida, tipografia refinada e glassmorphism aplicado com moderação
-- ⚡ **Performance** — bundle otimizado com Vite, imagens com `object-fit`, sem bibliotecas CSS externas pesadas
-- 🔒 **Segurança** — headers HTTP configurados para proteção contra XSS, clickjacking e MIME sniffing
-- 🔍 **SEO básico** — `<title>` descritivo, `<meta description>`, HTML semântico e estrutura de headings correta
-- 🌐 **Deploy automatizado** — publicação com um comando via Netlify CLI, com CDN global
+- **Mobile-first real** — o layout foi testado e corrigido para funcionar corretamente em smartphones, não apenas reduzido
+- **Design premium** — paleta de cores cuidadosamente escolhida, tipografia refinada e glassmorphism aplicado com moderação
+- **Performance** — bundle otimizado com Vite, imagens com `object-fit`, sem bibliotecas CSS externas pesadas
+- **Segurança** — headers HTTP configurados para proteção contra XSS, clickjacking e MIME sniffing
+- **SEO básico** — `<title>` descritivo, `<meta description>`, HTML semântico e estrutura de headings correta
+- **Deploy automatizado** — publicação com um comando via Netlify CLI, com CDN global
 
 ---
 
-## 📚 Aprendizados
+## Aprendizados
 
 - Compreensão prática do ciclo completo de desenvolvimento: da criação local ao deploy em produção
 - Implementação de responsividade real, indo além de apenas escalar elementos — reorganizando o layout com CSS Grid e `flexWrap`
@@ -119,60 +119,10 @@ O arquivo `netlify.toml` configura cabeçalhos HTTP como `Content-Security-Polic
 | Navbar não adaptava ao mobile | Criado menu hambúrguer com drawer animado e controle de estado React |
 | Grid de 2 colunas quebrando em telas pequenas | Aplicado `grid-template-columns: 1fr` via media query em cada seção |
 | Fontes com tamanho fixo em mobile | Reduzidos progressivamente em breakpoints `768px` e `480px` |
-| Git não reconhecido no terminal | Localizado caminho absoluto do executável em `C:\Program Files\Git\bin\git.exe` |
 
 ---
 
-## 🚀 Melhorias Futuras
-
-- [ ] Adicionar galeria de fotos com resultados dos tratamentos (antes/depois)
-- [ ] Implementar formulário de contato com envio de e-mail (ex: EmailJS ou Formspree)
-- [ ] Integrar sistema de agendamento online
-- [ ] Criar seção de depoimentos de clientes com fotos
-- [ ] Adicionar mapa interativo do Google Maps na seção de contato
-- [ ] Melhorar o SEO com meta tags Open Graph para compartilhamento em redes sociais
-- [ ] Implementar Google Analytics para monitorar acessos e conversões
-- [ ] Otimizar imagens com formato WebP para maior performance
-
----
-
-## 💻 Como Executar o Projeto
-
-### Pré-requisitos
-
-- [Node.js](https://nodejs.org/) v18 ou superior
-- [npm](https://www.npmjs.com/) v9 ou superior
-
-### Passo a passo
-
-```bash
-# 1. Clone o repositório
-git clone https://github.com/ronneiafonso/ronneiafonso-cida-estetica-landing.git
-
-# 2. Acesse a pasta do projeto
-cd ronneiafonso-cida-estetica-landing
-
-# 3. Instale as dependências
-npm install
-
-# 4. Inicie o servidor de desenvolvimento
-npm run dev
-```
-
-Acesse **[http://localhost:5173](http://localhost:5173)** no navegador.
-
-### Scripts disponíveis
-
-| Comando | Descrição |
-|---|---|
-| `npm run dev` | Inicia o servidor de desenvolvimento com HMR |
-| `npm run build` | Gera o build otimizado para produção na pasta `dist/` |
-| `npm run preview` | Pré-visualiza o build de produção localmente |
-| `npm run lint` | Executa a análise estática de código com ESLint |
-
----
-
-## 👨‍💻 Autor
+## Autor
 
 **Ronnei Afonso Leite de Oliveira**
 
@@ -184,5 +134,5 @@ Profissional em transição para a área de tecnologia, com foco em desenvolvime
 ---
 
 <p align="center">
-  Desenvolvido com 💜 por <strong>Ronnei Afonso</strong>
+  Desenvolvido por <strong>Ronnei Afonso</strong>
 </p>
